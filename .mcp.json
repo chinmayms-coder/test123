@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "exotel": {
+      "command": "npx",
+      "args": [
+        "mcp-remote",
+        "https://mcp.exotel.com/mcp",
+        "--header",
+        "Authorization:${EXOTEL_AUTH_HEADER}"
+      ],
+      "env": {
+        "EXOTEL_AUTH_HEADER": "{'token':'${EXOTEL_TOKEN}','from_number':'${EXOTEL_CALLER_ID}','caller_id':'${EXOTEL_CALLER_ID}','account_sid':'${EXOTEL_ACCOUNT_ID}','calls_api_key':'${EXOTEL_CALLS_API_KEY}','calls_api_token':'${EXOTEL_CALLS_API_TOKEN}','calls_account_id':'${EXOTEL_ACCOUNT_ID}','calls_base_url':'${EXOTEL_CALLS_BASE_URL}'}"
+      }
+    }
+  }
+}
